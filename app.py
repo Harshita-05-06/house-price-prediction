@@ -19,7 +19,7 @@ col1, col2 = st.columns(2)
 with col1:
     sqft = st.number_input("Sqft Living", min_value=0.0)
     bedrooms = st.number_input("Bedrooms", min_value=0)
-    bathrooms = st.number_input("Bathrooms", min_value=0.0)
+    bathrooms = st.number_input("Bathrooms", min_value=0)
 
 with col2:
     grade = st.number_input("Building Grade", min_value=0)
