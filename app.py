@@ -39,7 +39,7 @@ if st.button("🔮 Predict Price"):
     ]])
 
     prediction = model.predict(features)[0]
-
+    price = np.exp(prediction)
     st.markdown("---")
 
     st.markdown(
@@ -51,7 +51,7 @@ if st.button("🔮 Predict Price"):
             text-align:center;
             font-size:22px;
             color:#2e7d32;">
-            💰 Predicted House Price: ₹{prediction:,.2f}
+            💰 Predicted House Price: ₹{price:,.2f}
         </div>
         """,
         unsafe_allow_html=True
